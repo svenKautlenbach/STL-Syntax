@@ -703,6 +703,9 @@ if !exists("cpp_no_cpp11")
     syntax keyword cppSTLtype nullptr_t max_align_t
     syntax keyword cppSTLtype type_index
     syntax keyword cppSTLtype initializer_list
+    
+    syntax keyword cppSTLspecifier override
+    syntax keyword cppSTLspecifier final
 
     " type_traits
     syntax keyword cppSTLtype is_void
@@ -1297,5 +1300,6 @@ if version >= 508 || !exists("did_cpp_syntax_inits")
   HiLink cppSTLenum         Typedef
   HiLink cppSTLios          Function
   HiLink cppSTLcast         Statement " be consistent with official syntax
+  HiLink cppSTLspecifier    Statement	
   delcommand HiLink
 endif
